@@ -139,7 +139,7 @@ ORDER BY no_of_tracks DESC;
    ORDER BY money_spent;
 
    
-   /*NUMBER OF PURCHSES OF THE MOST POPULAR MUSIC GENRE FOR EACH COUNTRY*/
+   /*NUMBER OF PURCHASES OF THE MOST POPULAR MUSIC GENRE FOR EACH COUNTRY*/
    
    
    WITH most_popular AS( SELECT g.genre_id,g.name,COUNT(il.quantity) as purchases,c.country,
